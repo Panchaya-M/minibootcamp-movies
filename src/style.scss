@@ -1,0 +1,51 @@
+* {
+    background-color: #eee;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,170px);
+    grid-column-gap: 1rem ;
+    
+}
+.card {
+    padding: 0.5rem;
+    width: 170px;
+    cursor: pointer;
+}
+.movie-poster { 
+    img {
+        width: 130px;
+        height: 190px;
+        border-radius: 5px;
+    }
+}
+.movie-info {
+    padding: 0.5rem 0 2rem 0;
+    font-family: Helvetica, sans-serif;
+
+    .movie-title {
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding-bottom: 0rem;
+    }
+    .movie-score {
+        display: flex;
+        font-size: 1rem;
+        font-weight: 100;
+        padding-bottom: 0rem;
+        align-items: center;
+        
+        .icon {
+            width: 1.3rem;
+            height: auto;
+        }
+        .score {
+            padding-left: 0.5rem;
+        }
+    }
+    .movie-dvdReleaseDate {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: gray;
+    }
+}
